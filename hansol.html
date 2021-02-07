@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hansol Web</title>
+    <style>
+    a{
+      color:black;
+      text-decoration:underline;
+    }
+      h1 {
+        text-align: center;
+        border : 1px solid red;
+        margin : 0;
+      }
+      body {
+        margin: 0;
+      }
+      #intro img{
+        border-right : 1px blue solid
+      }
+      #intro ol{
+        padding-left: none;
+        line-height: 50px
+      }
+      #intro p{
+        width : 363px;
+      }
+      #intro {
+        display : grid;
+        grid-template-columns : 1fr 100%
+      }
+      .bton{
+        position:absolute;
+        right:0px;
+        bottom:0px;
+      }
+    </style>
+    <script>
+    function nightDayHandler(self){
+      var target = document.querySelector('body');
+        if(self.value === '블랙모드'){
+          target.style.backgroundColor = 'black';
+          target.style.color = 'white';
+          self.value = '화이트모드';
+
+        } else {
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
+          self.value = '블랙모드';
+        }
+    }
+    </script>
+  </head>
+  <body>
+    <h1>Hansol</h1>
+    <div id="intro">
+      <p><img src = "캡처.PNG" width=" 350px"></p>
+        <div>
+          <ol>
+            <li>이름 : 윤한솔</li>
+            <li>출생년도 : 1999년</li>
+            <li>생일 : 10월 11일</li>
+            <li>초등학교 : <a href="http://changlim.sen.es.kr/index.do" target="_blank" title="홈페이지 이동">창림초등학교</a></li>
+            <li>중, 고등학교 : <a href="http://rtleader.org/renewal/main/main.php" target="_blank" title="홈페이지 이동">RLS</a></li>
+            <li>대학교 : <a href="https://www.kmu.ac.kr/uni/main/main.jsp" target="_blank" title="홈페이지 이동">계명대학교</a></li>
+            <li>학과 : 컴퓨터공학과</li>
+          </ol>
+        </div>
+    </div>
+    <right>
+    <input class="bton" type="button" value="블랙모드" onclick="
+      nightDayHandler(this);">
+    </right>
+
+    <p>
+              <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6010b975a9a34e36b970b637/1et0l8t6f';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+    </p>
+  </body>
+</html>
